@@ -1,7 +1,8 @@
 <template>
 <div class="b-task">
   <h2>Задание {{taskNumber}}</h2>
-  <component :is="texts[componentName]"></component>
+  <component class="b-task__text"
+             :is="texts[componentName]"></component>
   <div class="b-task__desktop">
     <p v-html="console"></p>
   </div>
@@ -30,8 +31,16 @@ export default {
       ) : false;
     }
   },
-  mounted() {
-    Object.assign(this, tasks[this.componentName]());
+  created() {
+    this.connectPupilCode();
+  },
+  updated() {
+    this.connectPupilCode();
+  },
+  methods: {
+    connectPupilCode() {
+      Object.assign(this, tasks[this.componentName]());
+    }
   }
 };
 </script>
