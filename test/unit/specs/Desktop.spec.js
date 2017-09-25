@@ -6,8 +6,8 @@ describe('Desktop.vue', () => {
     const Constructor = Vue.extend(Desktop);
     const vm = new Constructor().$mount();
     Vue.nextTick(() => {
-      expect(vm.$el.querySelector('.b-task__success').textContent)
-        .to.equal('Готово');
+      expect(vm.$el.querySelector('.b-task__success span').textContent)
+        .to.equal('Ответ совпал');
       done();
     });
   });

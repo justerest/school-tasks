@@ -34,7 +34,7 @@ module.exports = {
       }
     ],
     'no-empty': 'off',
-    'comma-dangle': ["warn", "never"],
+    'comma-dangle': ["warn", "always-multiline"],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
 }

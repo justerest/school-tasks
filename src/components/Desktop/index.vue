@@ -7,7 +7,18 @@
     <p v-html="console"></p>
   </div>
   <div v-if="isSuccess"
-       class="b-task__success">Готово</div>
+       class="b-task__success">
+    <span>Ответ совпал</span>
+    <br>
+    <br>
+    <mark>
+      <small>
+        - Но это не значит, что задание выполнено полностью!
+        <br>
+        <small> - А может и выполнено. </small>
+      </small>
+    </mark>
+  </div>
 </div>
 </template>
 
@@ -25,11 +36,14 @@ export default {
       return 'Task' + this.taskNumber;
     },
     isSuccess() {
-      return this.taskNumber === '1' ? (
+      if (this.taskNumber === '1') return (
         this.console.match('10<br>5<br>15') ||
         this.console.match('10 5 15')
-      ) : false;
-    }
+      );
+      if (this.taskNumber === '2') return (
+        this.console.match('120')
+      );
+    },
   },
   created() {
     this.connectPupilCode();
@@ -40,8 +54,8 @@ export default {
   methods: {
     connectPupilCode() {
       Object.assign(this, tasks[this.componentName]());
-    }
-  }
+    },
+  },
 };
 </script>
 

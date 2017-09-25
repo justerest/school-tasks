@@ -24,7 +24,7 @@ export default {
   data() {
     return { tasks };
   },
-  components: { Desktop }
+  components: { Desktop },
 };
 </script>
 
