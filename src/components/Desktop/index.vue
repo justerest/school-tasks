@@ -36,28 +36,6 @@ export default {
 };
 </script>
 
-<style>
-.b-task {
-  max-width: 600px;
-  margin: auto;
-  text-align: left;
-}
-
-.b-task__desktop {
-  min-height: 200px;
-  padding: 0 15px;
-  border: 5px double;
-}
-
-.b-task__success {
-  margin-top: 15px;
-  text-align: right;
-  font-weight: bold;
-  color: #09b600;
-}
-
-h2,
-p {
-  font-weight: normal;
-}
+<style lang="scss" scoped>
+@import "./style.scss";
 </style>

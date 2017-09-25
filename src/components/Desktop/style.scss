@@ -1,0 +1,23 @@
+.b-task {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+
+  &__desktop {
+    min-height: 200px;
+    padding: 0 15px;
+    border: 5px double;
+  }
+
+  &__success {
+    margin-top: 15px;
+    text-align: right;
+    font-weight: bold;
+    color: $color-green;
+  }
+}
+
+h2,
+p {
+  font-weight: normal;
+}
