@@ -2,6 +2,8 @@
 
 > Задания по программированию для школьников
 
+> https://justerest.github.io/school-tasks/
+
 ## Build Setup
 
 ``` bash
