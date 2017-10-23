@@ -14,7 +14,7 @@ spinner.start();
 
 rm(config.build.assetsRoot, err => {
   if (err) throw err;
-  webpack(webpackConfig, function(err, stats) {
+  webpack(webpackConfig, function (err, stats) {
     spinner.stop();
     if (err) throw err;
     process.stdout.write(stats.toString({
@@ -22,7 +22,7 @@ rm(config.build.assetsRoot, err => {
       modules: false,
       children: false,
       chunks: false,
-      chunkModules: false
+      chunkModules: false,
     }) + '\n\n');
 
     if (stats.hasErrors()) {

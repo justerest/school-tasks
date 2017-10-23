@@ -4,7 +4,7 @@ export default (self = { console: '' }) => { // eslint-disable-line no-unused-va
   // REVIEW: Ипсользуй три переменных
   // Код ученика:
 
-  write('10 5 15');
+
 
   // Конец
   return self;

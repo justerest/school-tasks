@@ -17,18 +17,17 @@
 
 <script>
 import Desktop from '@/components/Desktop';
-import tasks from '@/tasks';
+import tasks from '@/components/TaskTexts';
 
 export default {
   name: 'app',
+  components: { Desktop },
   data() {
     return { tasks };
   },
-  components: { Desktop },
 };
 </script>
 
 <style lang="scss">
-@import "~@/style/_application.scss";
-@import "./style.scss";
+@import "~@/styles/_application.scss";
 </style>

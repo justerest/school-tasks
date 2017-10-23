@@ -20,8 +20,7 @@ module.exports = {
       }
     }
   },
-  // add your custom rules here
-  'rules': {
+  rules: {
     'no-console': [
       'warn', {
         allow: ["warn", "error"]
@@ -35,6 +34,6 @@ module.exports = {
     ],
     'no-empty': 'off',
     'comma-dangle': ["warn", "always-multiline"],
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   }
 }

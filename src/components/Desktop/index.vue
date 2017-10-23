@@ -15,7 +15,13 @@
       <small>
         - Но это не значит, что задание выполнено полностью!
         <br>
-        <small> - А может и выполнено. </small>
+        <small> - А может оно вообще не выполнено.
+          <br>
+          <small> - А может и выполнено.
+            <br>
+            <small> - Неизвестно.</small>
+          </small>
+        </small>
       </small>
     </mark>
   </div>
@@ -24,7 +30,7 @@
 
 <script>
 import tasks from '@/tasks';
-import texts from '@/components/tasksText';
+import texts from '@/components/TaskTexts';
 
 export default {
   props: ['taskNumber'],
