@@ -29,15 +29,15 @@ npm i
 
 ### 3. Настроить Atom
 
-#### 1. Зайти в меню: `File -> Settings -> Install`
-#### 2. Найти и установить плагины:
+#### 3.1. Зайти в меню: `File -> Settings -> Install`
+#### 3.2. Найти и установить плагины:
 - atom-beautify
 - linter-eslint (со всеми дополнительными зависимостями)
 - file-icons
 
 Установка может занять некоторое время. Главное, не выключать Atom, пока в разделе настроек Packages не появятся все вышеперечисленные плагины. Дождаться установки
 
-#### 3. Перейти в раздел меню Packages (`File -> Settings -> Packages`)
+#### 3.3. Перейти в раздел меню Packages (`File -> Settings -> Packages`)
 - нажать на atom-beautify -> `settings` и найти в списке JavaScript
   - Отметить флажок `Beautify on Save`
   - Выбрать Brace style: `collapse-preserve-inline`
@@ -45,9 +45,9 @@ npm i
   - Отметить флажок `Fix errors on Save`
   - Отметить флажок `Ignore fixable rules while typing`
 
-#### 4. Сочетанием клавиш `Ctrl+Shift+A` открыть папку school-tasks
+#### 3.4. Сочетанием клавиш `Ctrl+Shift+A` открыть папку school-tasks
 
-#### 5. Найдите и откройте файл `/src/tasks/Task1.js`
+#### 3.5. Найдите и откройте файл `/src/tasks/Task1.js`
 
 ### 4. Запустить локальный сервер с помощью командной строки
 > Команда должна быть запущена в папке `school-tasks`
