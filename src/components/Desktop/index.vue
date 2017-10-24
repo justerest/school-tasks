@@ -2,7 +2,7 @@
 <div class="b-task">
   <h2>Задание {{taskNumber}}</h2>
   <component class="b-task__text"
-             :is="texts[componentName]"></component>
+             :is="taskTexts[componentName]"></component>
   <div class="b-task__desktop">
     <p v-html="console"></p>
   </div>
@@ -30,12 +30,12 @@
 
 <script>
 import tasks from '@/tasks';
-import texts from '@/components/TaskTexts';
+import taskTexts from '@/components/TaskTexts';
 
 export default {
   props: ['taskNumber'],
   data() {
-    return { console: '', texts };
+    return { console: '', taskTexts };
   },
   computed: {
     componentName() {
